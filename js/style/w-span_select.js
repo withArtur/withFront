@@ -38,9 +38,9 @@ function SelectTag() {
 
         var textchange = $this.find('option:selected').text() + _suffix;
 
-        // if (textchange != $span.text()) {
-        //     $span.text($span.text() + ' ' + textchange + _suffix);
-        // }
+        if (textchange != $span.text()) {
+            $span.text(textchange);
+        }
     });
 }
 

@@ -1,0 +1,35 @@
+/*Select*/
+.select {
+    position: relative;
+    font-family: 'Open sans';
+}
+.select span {
+    display: block;
+    padding-right: 20px;
+    cursor: pointer;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.select span:after {
+    content: '\f107';
+    position: absolute;
+    right: 0;
+    font-family: 'FontAwesome';
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+}
+.select select {
+    cursor: pointer;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    top: 0;
+    opacity: 0;
+}
+/*End Select*/
